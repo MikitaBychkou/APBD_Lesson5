@@ -61,7 +61,7 @@ public class AnimalsController: ControllerBase
         var animalToDelete = _animals.FirstOrDefault(a => a.Id == id);
         if (animalToDelete == null)
         {
-            return NotFound($"Animal with id {id} was not found");
+            return NotFound($"Animal with id {id} was not  found");
         }
 
         _animals.Remove(animalToDelete);
